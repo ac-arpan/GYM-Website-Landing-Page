@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AC's Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        color: turquoise;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Baloo Bhai', cursive;
+    }
+
+    .left {
+
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        /* border: 2px solid red; */
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        font-size: 19px;
+
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        top: 31px;
+        right: 34px;
+        /* border :2px solid yellow; */
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 17px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(240, 226, 226);
+        text-decoration: underline;
+
+    }
+
+    .left img {
+        width: 125px;
+        filter: invert(100%);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai', cursive;
+
+    }
+
+    .btn:hover {
+        background-color: rgba(202, 196, 196, 0.432);
+    }
+
+    .container {
+        position: absolute;
+        right: 18px;
+        /* border: 2px solid white; */
+        margin: 46px 94px;
+        padding: 47px 74px;
+        width: 33%;
+        border-radius: 11px;
+
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 389px;
+        padding: 8px;
+        /* border: 2px solid black; */
+        margin: 6px auto;
+        font-size: 20px;
+        /* border-radius: 12px; */
+        font-family: 'Baloo Bhai', cursive;
+        background: none;
+        border: none;
+        color: blanchedalmond;
+        outline: none;
+
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 81%;
+        margin: 12px auto;
+    }
+
+    .container hr {
+        width: 77%;
+        border-width: 0.5px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for log -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>AC Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym of Habra</h1>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <hr>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+                <hr>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+                <hr>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+                <hr>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
